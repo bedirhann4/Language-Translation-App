@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Labrada:ital,wght@1,200&family=Lato:ital,wght@1,300&family=Quicksand&family=Rubik:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #808080;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+}
+.right-side{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000000;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    background-color: #000000;
+}
+.left-side{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid black;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    background-color: rgb(9, 9, 9);
+}
+#instead{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    margin-bottom: 100px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 100ms ease-in-out;
+}
+#instead:hover{
+    opacity: 1;
+}
+.bottom-side{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 12%;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(9, 9, 9);
+    border-top: 1px solid black;
+}
+#translate{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: #fff;
+    opacity: .9;
+    padding: 7px 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 100ms all;
+}
+#translate:hover{
+    background-color: gray;
+    opacity: 1;
+}
+#voice{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    transform: translate(0, -50%);
+    opacity: .7;
+    cursor: pointer;
+}
+#voice2{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: .7;
+    cursor: pointer;
+}
+#copy{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-left: 50px;
+    transform: translate(0, -50%);
+    opacity: .7;
+    cursor: pointer;
+}
+#copy2{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-right: 50px;
+    transform: translate(0, -50%);
+    opacity: .7;
+    cursor: pointer;
+}
+#myBtn{
+    background-color: rgb(9, 9, 9);
+    border: none;
+}
+#select-from{
+    position: absolute;
+    left: 30%;
+    margin-top: 8px;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: rgb(9, 9, 9);
+    opacity: .8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+select option:hover{
+    background-color: #000000;
+}
+#select-to{
+    position: absolute;
+    right: 30%;
+    margin-top: 8px;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+select, option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+option{
+    font-size: 15px;
+    margin: 20px;
+}
+#left-side-textarea{
+    margin: 5%;
+    margin-top: 20%;
+    background-color: rgb(9, 9, 9);
+    border: none;
+    outline: none;
+    resize: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+#right-side-textarea{
+    margin: 5%;
+    margin-top: 20%;
+    background-color: rgb(0,0,0);
+    border: none;
+    outline: none;
+    resize: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    opacity: 0.6;
+}
+#clear-consol{
+    font-size: 28px;
+    color: #fff;
+    opacity: 0.6;
+    position: relative;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+#select-to[class="move"]{
+    position: absolute;
+    right: 100%;
+}
+#copied1{
+    display: none;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    padding: 2px;
+    top: -50%;
+    left: 7%;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#copied2{
+    display: none;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    padding: 2px;
+    top: -50%;
+    right: 7%;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#spinner{
+    position: absolute;
+    display: none;
+}

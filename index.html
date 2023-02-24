@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="icon/globe-solid.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Translate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="left-side">
+                <select size="" id="select-from">
+                </select>
+                <textarea id="left-side-textarea" cols="45" rows="9" maxlength="10000" autofocus></textarea>
+                <i id="clear-consol" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="right-side">
+                <select id="select-to">
+                </select>
+                <textarea id="right-side-textarea" cols="45" rows="9" maxlength="10000" disabled></textarea>
+                <div id="spinner" class="spinner-border m-5" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="bottom-side">
+                <i id="voice" class="fa-solid fa-volume-high"></i>
+                <span id="copied1">Copied!</span>
+                <i id="copy" class="fa-solid fa-copy"></i>
+                <i id="instead" class="fa-solid fa-right-left"></i>
+                <span id="copied2">Copied!</span>
+                <i id="copy2" class="fa-solid fa-copy"></i>
+                <i id="voice2" class="fa-solid fa-volume-high"></i>
+                <button id="translate" class="" type="button">Translate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="languages.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
